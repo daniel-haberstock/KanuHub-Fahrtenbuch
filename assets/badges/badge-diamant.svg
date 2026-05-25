@@ -1,0 +1,83 @@
+<svg width="100" height="130" viewBox="0 0 100 130" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg" cx="38%" cy="32%" r="70%">
+      <stop offset="0%"   stop-color="#CE93D8"/>
+      <stop offset="55%"  stop-color="#7B1FA2"/>
+      <stop offset="100%" stop-color="#4A148C"/>
+    </radialGradient>
+
+    <!-- Animierter Diamant-Ring -->
+    <linearGradient id="ring" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#E1F5FE"/>
+      <stop offset="18%"  stop-color="#B3E5FC"/>
+      <stop offset="36%"  stop-color="#FFFFFF"/>
+      <stop offset="54%"  stop-color="#80D8FF"/>
+      <stop offset="72%"  stop-color="#B2EBF2"/>
+      <stop offset="90%"  stop-color="#F3E5F5"/>
+      <stop offset="100%" stop-color="#E1F5FE"/>
+    </linearGradient>
+
+    <filter id="sh" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#4A148C" flood-opacity="0.55"/>
+    </filter>
+    <filter id="sparkleGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="1.8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <clipPath id="clip">
+      <circle cx="50" cy="50" r="43"/>
+    </clipPath>
+  </defs>
+
+  <!-- Diamant-Ring (animiert via CSS-Klasse) -->
+  <circle cx="50" cy="50" r="48" fill="url(#ring)" filter="url(#sh)" class="badge-diamant-ring"/>
+
+  <!-- Hintergrund -->
+  <circle cx="50" cy="50" r="43" fill="url(#bg)"/>
+  <circle cx="50" cy="50" r="43" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+
+  <!-- Glanz -->
+  <ellipse cx="33" cy="29" rx="16" ry="9" fill="rgba(255,255,255,0.22)" transform="rotate(-35,33,29)" clip-path="url(#clip)"/>
+
+  <!-- Diamant-Icon -->
+  <g clip-path="url(#clip)">
+    <!-- Hauptdiamant -->
+    <polygon points="50,22 70,46 50,75 30,46"
+             fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.95)" stroke-width="2.2" stroke-linejoin="round"/>
+    <!-- Facetten -->
+    <line x1="50" y1="22" x2="30" y2="46" stroke="rgba(255,255,255,0.65)" stroke-width="1.2"/>
+    <line x1="50" y1="22" x2="70" y2="46" stroke="rgba(255,255,255,0.65)" stroke-width="1.2"/>
+    <line x1="50" y1="22" x2="50" y2="46" stroke="rgba(255,255,255,0.35)" stroke-width="1"/>
+    <line x1="30" y1="46" x2="70" y2="46" stroke="rgba(255,255,255,0.35)" stroke-width="1"/>
+    <line x1="30" y1="46" x2="50" y2="75" stroke="rgba(255,255,255,0.5)" stroke-width="1.2"/>
+    <line x1="70" y1="46" x2="50" y2="75" stroke="rgba(255,255,255,0.5)" stroke-width="1.2"/>
+    <!-- Glanzfacette oben-links -->
+    <polygon points="50,22 30,46 40,34" fill="rgba(255,255,255,0.18)"/>
+  </g>
+
+  <!-- Rotierende Funkeln -->
+  <g class="badge-sparkles" filter="url(#sparkleGlow)">
+    <animateTransform attributeName="transform" type="rotate"
+                      values="0 50 47;360 50 47" dur="7s" repeatCount="indefinite"/>
+    <!-- 8 Sternpunkte -->
+    <circle cx="50" cy="2"  r="2.2" fill="white" opacity="0.95"/>
+    <circle cx="84" cy="17" r="1.6" fill="white" opacity="0.8"/>
+    <circle cx="97" cy="50" r="2.2" fill="white" opacity="0.95"/>
+    <circle cx="84" cy="83" r="1.6" fill="white" opacity="0.8"/>
+    <circle cx="50" cy="97" r="2.2" fill="white" opacity="0.95"/>
+    <circle cx="16" cy="83" r="1.6" fill="white" opacity="0.8"/>
+    <circle cx="3"  cy="50" r="2.2" fill="white" opacity="0.95"/>
+    <circle cx="16" cy="17" r="1.6" fill="white" opacity="0.8"/>
+  </g>
+
+  <!-- Badge-Name -->
+  <text x="50" y="112" text-anchor="middle"
+        font-family="'Segoe UI',Helvetica,Arial,sans-serif"
+        font-size="9" font-weight="700" fill="#7B1FA2" letter-spacing="1">DIAMANT-</text>
+  <text x="50" y="124" text-anchor="middle"
+        font-family="'Segoe UI',Helvetica,Arial,sans-serif"
+        font-size="9" font-weight="700" fill="#7B1FA2" letter-spacing="1">PADDLER</text>
+</svg>

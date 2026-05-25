@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120">
+  <defs>
+    <linearGradient id="tierg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5D6A4"/>
+      <stop offset="40%" stop-color="#E8AC5A"/>
+      <stop offset="70%" stop-color="#CD7F32"/>
+      <stop offset="100%" stop-color="#8B4513"/>
+    </linearGradient>
+    <radialGradient id="bgg" cx="40%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#42A5F5"/>
+      <stop offset="100%" stop-color="#0D47A1"/>
+    </radialGradient>
+    <clipPath id="sc"><path d="M10,15 Q10,8 17,8 L83,8 Q90,8 90,15 L90,75 Q90,95 50,112 Q10,95 10,75 Z"/></clipPath>
+  </defs>
+  <path d="M10,15 Q10,8 17,8 L83,8 Q90,8 90,15 L90,75 Q90,95 50,112 Q10,95 10,75 Z" fill="#CD7F32" stroke="#E8AC5A" stroke-width="4"/>
+  <path d="M10,15 Q10,8 17,8 L83,8 Q90,8 90,15 L90,75 Q90,95 50,112 Q10,95 10,75 Z" fill="url(#bgg)"/>
+  <ellipse cx="38" cy="28" rx="16" ry="10" fill="rgba(255,255,255,0.15)" transform="rotate(-20,38,28)" clip-path="url(#sc)"/>
+  <g clip-path="url(#sc)" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round">
+    <path d="M18,54 Q25,49 32,54 Q39,59 46,54 Q53,49 60,54 Q67,59 74,54 Q78,51 82,54"/>
+    <path d="M18,62 Q25,57 32,62 Q39,67 46,62 Q53,57 60,62 Q67,67 74,62 Q78,59 82,62"/>
+    <path d="M18,70 Q25,65 32,70 Q39,75 46,70 Q53,65 60,70 Q67,75 74,70 Q78,67 82,70"/>
+  </g>
+  <text x="50" y="90" text-anchor="middle" font-family="Arial,sans-serif" font-size="8.5" font-weight="bold" fill="white">ERSTER</text>
+  <text x="50" y="101" text-anchor="middle" font-family="Arial,sans-serif" font-size="8.5" font-weight="bold" fill="white">KILOMETER</text>
+</svg>

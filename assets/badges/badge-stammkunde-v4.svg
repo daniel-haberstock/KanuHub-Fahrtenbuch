@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120">
+  <defs>
+    <linearGradient id="bgg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#A1887F"/><stop offset="100%" stop-color="#3E2723"/>
+    </linearGradient>
+  </defs>
+  <rect x="5" y="5" width="90" height="90" rx="18" ry="18" fill="url(#bgg)" stroke="#BDBDBD" stroke-width="3"/>
+  <!-- anchor icon -->
+  <circle cx="50" cy="26" r="5" fill="none" stroke="white" stroke-width="2"/>
+  <line x1="50" y1="31" x2="50" y2="68" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="34" y1="38" x2="66" y2="38" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M34,38 Q28,52 34,62 Q40,68 50,66" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  <path d="M66,38 Q72,52 66,62 Q60,68 50,66" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="34" cy="62" r="3" fill="white"/>
+  <circle cx="66" cy="62" r="3" fill="white"/>
+  <text x="50" y="80" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="bold" fill="white">STAMM-</text>
+  <text x="50" y="91" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="bold" fill="white">KUNDE</text>
+  <rect x="25" y="104" width="50" height="12" rx="6" fill="#BDBDBD"/>
+  <text x="50" y="114" text-anchor="middle" font-family="Arial,sans-serif" font-size="7.5" font-weight="bold" fill="white">SILVER</text>
+</svg>

@@ -1,0 +1,15 @@
+AuthType Basic
+AuthName "Fahrtenbuch"
+AuthUserFile /mnt/web114/e1/80/5535580/htdocs/fahrtenbuch_1/admin/.htpasswd
+Require valid-user
+AddType application/x-httpd-php80 .php
+
+# ── Security-Header ──────────────────────────────────────────────
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+    Header always set X-XSS-Protection "1; mode=block"
+</IfModule>

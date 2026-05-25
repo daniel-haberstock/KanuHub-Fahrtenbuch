@@ -1,0 +1,297 @@
+/* Fahrtenbuch Beta — member.css
+   Eigenständige Seite (Mitgliederbereich), kein 3-Spalten-Layout */
+
+:root {
+    --km-primary:   #0369a1;
+    --km-green:     #16a34a;
+    --km-amber:     #d97706;
+    --km-red:       #dc2626;
+    --km-text:      #111827;
+    --km-muted:     #6b7280;
+    --km-border:    #e5e7eb;
+    --km-surface:   #ffffff;
+    --km-bg:        #f3f4f6;
+    --km-radius:    10px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body.kcs-member-page {
+    font-family: 'Inter', system-ui, sans-serif;
+    background: var(--km-bg);
+    color: var(--km-text);
+    min-height: 100vh;
+}
+
+/* ── LOGIN ──────────────────────────────────────────────────────── */
+.km-login-wrap {
+    min-height: 100vh;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    padding: 24px 16px; gap: 16px;
+}
+.km-login-card {
+    width: 100%; max-width: 400px;
+    background: var(--km-surface);
+    border-radius: var(--km-radius);
+    box-shadow: 0 4px 24px rgba(0,0,0,.10);
+    overflow: hidden;
+}
+.km-login-header {
+    background: var(--km-primary);
+    color: #fff;
+    text-align: center;
+    padding: 28px 24px 20px;
+}
+.km-login-header i { font-size: 36px; display: block; margin-bottom: 8px; }
+.km-login-header h1 { font-size: 20px; font-weight: 700; margin-bottom: 4px; }
+.km-login-header p  { font-size: 13px; opacity: .8; }
+.km-login-body  { padding: 24px; }
+.km-login-footer {
+    padding: 12px 24px;
+    background: var(--km-bg);
+    font-size: 12px; color: var(--km-muted);
+    text-align: center;
+    border-top: 1px solid var(--km-border);
+}
+.km-error {
+    background: #fef2f2; border: 1px solid #fca5a5;
+    color: var(--km-red); border-radius: 8px;
+    padding: 10px 14px; font-size: 13px;
+    margin-bottom: 16px;
+    display: flex; align-items: center; gap: 8px;
+}
+.km-field { margin-bottom: 16px; }
+.km-field label { display: block; font-size: 13px; font-weight: 600; margin-bottom: 6px; }
+.km-input {
+    width: 100%; padding: 10px 14px;
+    border: 1.5px solid var(--km-border);
+    border-radius: 8px; font-size: 14px;
+    font-family: inherit; outline: none;
+    transition: border-color .15s;
+}
+.km-input:focus { border-color: var(--km-primary); }
+.km-btn-primary {
+    width: 100%; padding: 12px;
+    background: var(--km-primary); color: #fff;
+    border: none; border-radius: 8px;
+    font-size: 15px; font-weight: 600;
+    cursor: pointer; font-family: inherit;
+    display: flex; align-items: center; justify-content: center; gap: 8px;
+    transition: opacity .15s;
+}
+.km-btn-primary:hover { opacity: .88; }
+.km-back-link {
+    font-size: 13px; color: var(--km-muted);
+    text-decoration: none; display: flex; align-items: center; gap: 6px;
+}
+.km-back-link:hover { color: var(--km-text); }
+
+/* ── HEADER ─────────────────────────────────────────────────────── */
+.km-header {
+    background: var(--km-primary);
+    color: #fff;
+    position: sticky; top: 0; z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,.15);
+}
+.km-header__inner {
+    max-width: 1200px; margin: 0 auto;
+    padding: 12px 20px;
+    display: flex; align-items: center; gap: 16px;
+}
+.km-header__brand {
+    display: flex; align-items: center; gap: 10px; flex: 1;
+}
+.km-header__brand i { font-size: 20px; }
+.km-header__title { font-size: 15px; font-weight: 700; }
+.km-header__name  { font-size: 13px; opacity: .75; }
+.km-header__actions {
+    display: flex; align-items: center; gap: 8px;
+}
+.km-idle-timer {
+    font-size: 12px; opacity: .7;
+    display: flex; align-items: center; gap: 4px;
+}
+.km-btn-ghost {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 6px 14px; border-radius: 8px;
+    font-size: 13px; font-weight: 600;
+    text-decoration: none;
+    border: 1.5px solid rgba(255,255,255,.35);
+    color: #fff; background: transparent;
+    transition: background .15s;
+}
+.km-btn-ghost:hover { background: rgba(255,255,255,.15); color: #fff; }
+.km-btn-ghost--red  { border-color: rgba(255,150,150,.4); }
+.km-btn-ghost--red:hover { background: rgba(220,38,38,.25); }
+
+/* ── TABS ────────────────────────────────────────────────────────── */
+.km-tabs {
+    background: var(--km-surface);
+    border-bottom: 1px solid var(--km-border);
+    position: sticky; top: 53px; z-index: 90;
+}
+.km-tabs__inner {
+    max-width: 1200px; margin: 0 auto;
+    padding: 0 16px;
+    display: flex; gap: 2px;
+    overflow-x: auto; scrollbar-width: none;
+}
+.km-tabs__inner::-webkit-scrollbar { display: none; }
+.km-tab {
+    padding: 14px 16px;
+    background: none; border: none; border-bottom: 3px solid transparent;
+    font-size: 13px; font-weight: 600; color: var(--km-muted);
+    cursor: pointer; font-family: inherit;
+    display: flex; align-items: center; gap: 6px;
+    white-space: nowrap; transition: color .15s;
+    margin-bottom: -1px;
+}
+.km-tab:hover  { color: var(--km-text); }
+.km-tab.active {
+    color: var(--km-primary);
+    border-bottom-color: var(--km-primary);
+}
+
+/* ── CONTENT AREA ───────────────────────────────────────────────── */
+.km-content {
+    max-width: 1200px; margin: 0 auto;
+    padding: 24px 20px;
+}
+.km-pane { display: none; }
+.km-pane.active { display: block; animation: km-fadein .2s ease; }
+@keyframes km-fadein { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; } }
+
+.km-loading {
+    text-align: center; padding: 48px;
+    font-size: 24px; color: var(--km-muted);
+}
+
+/* ── Shared card styles ─────────────────────────────────────────── */
+.km-card {
+    background: var(--km-surface);
+    border: 1px solid var(--km-border);
+    border-radius: var(--km-radius);
+    padding: 20px;
+    margin-bottom: 16px;
+}
+.km-card__title {
+    font-size: 15px; font-weight: 700; margin-bottom: 16px;
+    display: flex; align-items: center; gap: 8px;
+}
+.km-card__title i { color: var(--km-primary); }
+.km-section-title {
+    font-size: 11px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: .06em; color: var(--km-muted); margin-bottom: 12px;
+}
+
+/* ── Stat KPI grid ──────────────────────────────────────────────── */
+.km-kpi-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 12px; margin-bottom: 16px;
+}
+.km-kpi {
+    background: var(--km-bg); border-radius: 8px;
+    padding: 14px 16px;
+}
+.km-kpi__label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .05em; color: var(--km-muted); margin-bottom: 4px; }
+.km-kpi__value { font-size: 22px; font-weight: 800; color: var(--km-text); }
+.km-kpi__diff  { font-size: 12px; margin-top: 3px; }
+.km-kpi__diff.pos { color: var(--km-green); }
+.km-kpi__diff.neg { color: var(--km-red); }
+
+/* ── Season selector ────────────────────────────────────────────── */
+.km-season-bar {
+    display: flex; align-items: center; gap: 10px;
+    background: var(--km-bg); border-radius: 8px;
+    padding: 10px 14px; margin-bottom: 16px; font-size: 13px;
+}
+.km-season-bar label { font-weight: 600; color: var(--km-muted); white-space: nowrap; }
+.km-season-select {
+    padding: 6px 10px; border: 1.5px solid var(--km-border);
+    border-radius: 6px; font-family: inherit; font-size: 13px;
+    background: var(--km-surface); cursor: pointer;
+}
+
+/* ── Rangliste ───────────────────────────────────────────────────── */
+.km-rank-list { display: flex; flex-direction: column; gap: 6px; }
+.km-rank-row {
+    display: flex; align-items: center; gap: 10px;
+    padding: 10px 14px; border-radius: 8px;
+    background: var(--km-bg);
+}
+.km-rank-row.is-me {
+    background: color-mix(in srgb, var(--km-primary) 8%, transparent);
+    border: 1.5px solid color-mix(in srgb, var(--km-primary) 25%, transparent);
+}
+.km-rank-pos { font-size: 16px; min-width: 28px; text-align: center; }
+.km-rank-name { flex: 1; font-size: 14px; font-weight: 600; }
+.km-rank-bar-wrap { flex: 1; height: 6px; background: var(--km-border); border-radius: 3px; }
+.km-rank-bar { height: 100%; background: var(--km-primary); border-radius: 3px; }
+.km-rank-km { font-size: 13px; font-weight: 700; min-width: 70px; text-align: right; }
+
+/* ── Trips table ────────────────────────────────────────────────── */
+.km-table-wrap { overflow-x: auto; }
+.km-table {
+    width: 100%; border-collapse: collapse; font-size: 13px;
+}
+.km-table th {
+    padding: 8px 12px; text-align: left;
+    font-size: 11px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: .05em; color: var(--km-muted);
+    border-bottom: 1px solid var(--km-border);
+}
+.km-table td {
+    padding: 10px 12px; border-bottom: 1px solid var(--km-border);
+}
+.km-table tr:last-child td { border-bottom: none; }
+
+/* ── Work duty ───────────────────────────────────────────────────── */
+.km-progress-row {
+    display: flex; align-items: center; gap: 12px; margin-bottom: 12px;
+}
+.km-progress-bar-wrap { flex: 1; height: 10px; background: var(--km-border); border-radius: 5px; }
+.km-progress-bar-fill { height: 100%; border-radius: 5px; background: var(--km-green); }
+.km-work-list { display: flex; flex-direction: column; gap: 8px; }
+.km-work-item {
+    display: flex; align-items: center; gap: 10px;
+    padding: 10px 14px; border-radius: 8px;
+    background: var(--km-bg);
+}
+.km-work-item__date { font-size: 12px; color: var(--km-muted); min-width: 90px; }
+.km-work-item__desc { flex: 1; font-size: 13px; }
+.km-work-item__hrs  {
+    font-size: 12px; font-weight: 700; padding: 2px 10px;
+    border-radius: 20px;
+}
+.km-work-item__hrs.confirmed { color: var(--km-green); background: #dcfce7; }
+.km-work-item__hrs.pending   { color: var(--km-amber); background: #fef3c7; }
+
+/* ── Boats tab ───────────────────────────────────────────────────── */
+.km-boat-card {
+    display: flex; align-items: center; gap: 14px;
+    padding: 14px 16px; border-radius: 8px;
+    background: var(--km-bg); margin-bottom: 8px;
+}
+.km-boat-name { font-weight: 700; font-size: 14px; }
+.km-boat-meta { font-size: 12px; color: var(--km-muted); margin-top: 2px; }
+
+/* ── Settings ────────────────────────────────────────────────────── */
+.km-settings-form { display: flex; flex-direction: column; gap: 14px; max-width: 480px; }
+.km-settings-btn {
+    padding: 10px 20px; background: var(--km-primary); color: #fff;
+    border: none; border-radius: 8px; font-size: 14px; font-weight: 600;
+    cursor: pointer; font-family: inherit; display: inline-flex;
+    align-items: center; gap: 8px; transition: opacity .15s;
+}
+.km-settings-btn:hover { opacity: .88; }
+
+/* ── Badges ──────────────────────────────────────────────────────── */
+.km-badges-wrap { /* rendered by BadgeRenderer HTML */ }
+
+/* ── Responsive ──────────────────────────────────────────────────── */
+@media (max-width: 640px) {
+    .km-kpi-grid { grid-template-columns: 1fr 1fr; }
+    .km-header__name { display: none; }
+    .km-idle-timer { display: none; }
+}

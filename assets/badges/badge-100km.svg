@@ -1,0 +1,53 @@
+<svg width="100" height="130" viewBox="0 0 100 130" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg" cx="38%" cy="32%" r="70%">
+      <stop offset="0%" stop-color="#1E88E5"/>
+      <stop offset="100%" stop-color="#0A2670"/>
+    </radialGradient>
+    <linearGradient id="ring" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%"   stop-color="#BDBDBD"/>
+      <stop offset="30%"  stop-color="#F5F5F5"/>
+      <stop offset="65%"  stop-color="#9E9E9E"/>
+      <stop offset="100%" stop-color="#616161"/>
+    </linearGradient>
+    <filter id="sh" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3.5" flood-color="#0A2670" flood-opacity="0.4"/>
+    </filter>
+    <clipPath id="clip">
+      <circle cx="50" cy="50" r="43"/>
+    </clipPath>
+  </defs>
+
+  <!-- Silber-Ring -->
+  <circle cx="50" cy="50" r="48" fill="url(#ring)" filter="url(#sh)"/>
+
+  <!-- Hintergrund -->
+  <circle cx="50" cy="50" r="43" fill="url(#bg)"/>
+  <circle cx="50" cy="50" r="43" fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="1.5"/>
+
+  <!-- Glanz -->
+  <ellipse cx="33" cy="29" rx="16" ry="9" fill="rgba(255,255,255,0.18)" transform="rotate(-35,33,29)" clip-path="url(#clip)"/>
+
+  <!-- 3 Wellen -->
+  <g clip-path="url(#clip)">
+    <path d="M16,40 Q23.5,32 31,40 Q38.5,32 46,40 Q53.5,32 61,40 Q68.5,32 76,40 Q80,36 84,40"
+          fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="3" stroke-linecap="round"/>
+    <path d="M18,51 Q25.5,43 33,51 Q40.5,43 48,51 Q55.5,43 63,51 Q70.5,43 78,51"
+          fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M20,61 Q27.5,54 35,61 Q42.5,54 50,61 Q57.5,54 65,61 Q72.5,54 80,61"
+          fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="1.8" stroke-linecap="round"/>
+  </g>
+
+  <!-- Meilenstein-Text -->
+  <text x="50" y="79" text-anchor="middle"
+        font-family="'Segoe UI',Helvetica,Arial,sans-serif"
+        font-size="13" font-weight="700" fill="rgba(255,255,255,0.95)" letter-spacing="1">100 km</text>
+
+  <!-- Badge-Name -->
+  <text x="50" y="112" text-anchor="middle"
+        font-family="'Segoe UI',Helvetica,Arial,sans-serif"
+        font-size="9" font-weight="700" fill="#1565C0" letter-spacing="1">HUNDERT</text>
+  <text x="50" y="124" text-anchor="middle"
+        font-family="'Segoe UI',Helvetica,Arial,sans-serif"
+        font-size="9" font-weight="700" fill="#1565C0" letter-spacing="1">KILOMETER</text>
+</svg>

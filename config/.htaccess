@@ -1,0 +1,3 @@
+# Zugriff auf Config-Ordner verweigern
+Order Deny,Allow
+Deny from all

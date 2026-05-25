@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 130">
+  <defs>
+    <linearGradient id="ring" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF59D"/>
+      <stop offset="40%" stop-color="#F9A825"/>
+      <stop offset="70%" stop-color="#F57F17"/>
+      <stop offset="100%" stop-color="#E65100"/>
+    </linearGradient>
+    <radialGradient id="bg" cx="40%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#66BB6A"/>
+      <stop offset="100%" stop-color="#1B5E20"/>
+    </radialGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+    <clipPath id="circ"><circle cx="50" cy="52" r="38"/></clipPath>
+  </defs>
+  <circle cx="50" cy="52" r="48" fill="url(#ring)" filter="url(#shadow)"/>
+  <circle cx="50" cy="52" r="43" fill="url(#bg)"/>
+  <ellipse cx="38" cy="34" rx="14" ry="8" fill="rgba(255,255,255,0.18)" transform="rotate(-30,38,34)"/>
+  <!-- seasons: 4 quadrants -->
+  <g clip-path="url(#circ)">
+    <!-- spring top-left: flower petal -->
+    <ellipse cx="38" cy="38" rx="6" ry="10" fill="rgba(255,255,255,0.7)" transform="rotate(-30,38,38)"/>
+    <!-- summer top-right: sun rays -->
+    <circle cx="62" cy="38" r="6" fill="rgba(255,255,100,0.8)"/>
+    <line x1="62" y1="28" x2="62" y2="24" stroke="rgba(255,255,100,0.9)" stroke-width="2"/>
+    <line x1="70" y1="32" x2="73" y2="29" stroke="rgba(255,255,100,0.9)" stroke-width="2"/>
+    <!-- autumn bottom-right: leaf shape -->
+    <path d="M62,52 C68,52 74,58 72,64 C70,68 64,70 62,70 Z" fill="rgba(255,150,50,0.85)"/>
+    <!-- winter bottom-left: snowflake -->
+    <line x1="38" y1="56" x2="38" y2="68" stroke="white" stroke-width="2" stroke-linecap="round"/>
+    <line x1="32" y1="62" x2="44" y2="62" stroke="white" stroke-width="2" stroke-linecap="round"/>
+    <line x1="34" y1="58" x2="42" y2="66" stroke="white" stroke-width="2" stroke-linecap="round"/>
+    <line x1="42" y1="58" x2="34" y2="66" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <line x1="50" y1="14" x2="50" y2="90" stroke="rgba(255,255,255,0.5)" stroke-width="1.5"/>
+  <line x1="12" y1="52" x2="88" y2="52" stroke="rgba(255,255,255,0.5)" stroke-width="1.5"/>
+  <text x="50" y="112" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="bold" fill="#F9A825">VIER</text>
+  <text x="50" y="124" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="bold" fill="#F9A825">JAHRESZEITEN</text>
+</svg>

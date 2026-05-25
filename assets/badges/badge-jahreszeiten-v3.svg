@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 130">
+  <defs>
+    <radialGradient id="bgg" cx="40%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#66BB6A"/><stop offset="100%" stop-color="#1B5E20"/>
+    </radialGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#000" flood-opacity="0.35"/></filter>
+    <clipPath id="cc"><circle cx="50" cy="50" r="38"/></clipPath>
+  </defs>
+  <polygon points="50,2 60.9,9.4 74,8.4 79.7,20.3 91.6,26 90.6,39.1 98,50 90.6,60.9 91.6,74 79.7,79.7 74,91.6 60.9,90.6 50,98 39.1,90.6 26,91.6 20.3,79.7 8.4,74 9.4,60.9 2,50 9.4,39.1 8.4,26 20.3,20.3 26,8.4 39.1,9.4" fill="#F9A825" filter="url(#sh)"/>
+  <circle cx="50" cy="50" r="38" fill="url(#bgg)"/>
+  <g clip-path="url(#cc)">
+    <line x1="50" y1="20" x2="50" y2="80" stroke="rgba(255,255,255,0.5)" stroke-width="1.5"/>
+    <line x1="20" y1="50" x2="80" y2="50" stroke="rgba(255,255,255,0.5)" stroke-width="1.5"/>
+    <ellipse cx="36" cy="36" rx="5" ry="10" fill="rgba(255,255,255,0.7)" transform="rotate(-25,36,36)"/>
+    <circle cx="66" cy="36" r="7" fill="rgba(255,220,50,0.85)"/>
+    <path d="M60,50 C67,50 75,57 73,64 C71,69 66,71 62,71 Z" fill="rgba(255,150,50,0.9)"/>
+    <line x1="36" y1="54" x2="36" y2="68" stroke="white" stroke-width="2" stroke-linecap="round"/>
+    <line x1="29" y1="61" x2="43" y2="61" stroke="white" stroke-width="2" stroke-linecap="round"/>
+    <line x1="31" y1="56" x2="41" y2="66" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="41" y1="56" x2="31" y2="66" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+  <text x="50" y="112" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="bold" fill="#F9A825">VIER</text>
+  <text x="50" y="124" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="bold" fill="#F9A825">JAHRESZEITEN</text>
+</svg>

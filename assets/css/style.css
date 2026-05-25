@@ -1,0 +1,462 @@
+/**
+ * Fahrtenbuch - Stylesheet
+ */
+
+/* Grundlegendes Layout */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.container-fluid {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+/* Header */
+.row.bg-primary {
+    flex-shrink: 0;
+}
+
+/* Hauptinhalt */
+.main-content {
+    flex: 1;
+    overflow: hidden;
+    margin: 0;
+}
+
+/* Spalten-Layout */
+.boat-list-column {
+    width: 40%;
+    height: calc(100vh - 80px);
+    overflow-y: auto;
+    padding: 15px;
+    flex: 0 0 40%;
+    max-width: 40%;
+}
+
+.action-column {
+    width: 20%;
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;       /* Buttons oben, Fortschrittsbalken darunter */
+    align-items: center;
+    justify-content: flex-start;  /* Von oben beginnen, nicht zentriert */
+    padding: 15px;
+    flex: 0 0 20%;
+    max-width: 20%;
+    overflow-y: auto;
+}
+
+/* Fortschrittsbalken-Karte: volle Breite innerhalb der Spalte */
+.club-progress-card {
+    width: 100%;
+    max-width: 500px;
+    font-size: 0.82rem;
+}
+
+.status-column {
+    width: 40%;
+    height: calc(100vh - 80px);
+    overflow-y: hidden;
+    padding: 15px;
+    flex: 0 0 40%;
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Status-Spalte Cards */
+.status-column > .card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.status-column > .card:nth-child(1) {
+    flex: 1;
+    min-height: 0;
+}
+
+.status-column > .card:nth-child(2),
+.status-column > .card:nth-child(3) {
+    flex: 0 0 auto;
+    height: 20vh;
+}
+
+.status-column .card-body {
+    overflow-y: auto;
+    flex: 1;
+}
+
+/* Scrollbare Listen */
+.scrollable-list {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+/* Action Buttons */
+.action-buttons {
+    width: 100%;
+    max-width: 500px;
+}
+
+.action-buttons .btn {
+    padding: 20px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.action-buttons .btn i {
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+/* Bootsliste Items */
+.boat-group-header {
+    padding: 8px 12px;
+    background-color: #e9ecef;
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: #495057;
+    border-top: 1px solid #dee2e6;
+    border-bottom: 1px solid #dee2e6;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.boat-group-header:first-child {
+    border-top: none;
+}
+
+/* Anhänger-Kategorie - besondere Hervorhebung */
+.boat-group-header.trailer-header {
+    background-color: #ffc107;
+    color: #000;
+    font-weight: 700;
+    margin-top: 15px;
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid #ff9800;
+}
+
+/* Anhänger Boote - besondere Kennzeichnung */
+.boat-item.trailer-boat {
+    background-color: #fff9e6;
+}
+
+.boat-item.trailer-boat:hover {
+    background-color: #fff3cd;
+}
+
+.boat-item.trailer-boat .boat-name::before {
+    content: "🚛 ";
+}
+
+.boat-item {
+    padding: 12px;
+    border-bottom: 1px solid #dee2e6;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.boat-item:last-child {
+    border-bottom: none;
+}
+
+.boat-item:hover {
+    background-color: #f8f9fa;
+}
+
+.boat-item .boat-name {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #212529;
+}
+
+.boat-item .boat-info {
+    font-size: 0.875rem;
+    color: #6c757d;
+}
+
+.boat-type-img {
+    max-height: 50px;
+    width: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.boat-item.club-boat .boat-name::before {
+    content: "";
+}
+
+/* Boote auf Fahrt */
+.trip-item {
+    padding: 10px;
+    border-bottom: 1px solid #dee2e6;
+    cursor: pointer;
+    font-size: 0.875rem;
+}
+
+.trip-item:last-child {
+    border-bottom: none;
+}
+
+.trip-item:hover {
+    background-color: #f8f9fa;
+}
+
+.trip-item.overdue {
+    background-color: #ffebee;
+    border-left: 4px solid #dc3545;
+}
+
+.trip-item .boat-name {
+    font-weight: 600;
+    color: #212529;
+}
+
+.trip-item .trip-info {
+    font-size: 0.75rem;
+    color: #6c757d;
+}
+
+/* Beschädigte Boote */
+.damage-item {
+    padding: 10px;
+    border-bottom: 1px solid #dee2e6;
+    font-size: 0.875rem;
+}
+
+.damage-item:last-child {
+    border-bottom: none;
+}
+
+.damage-item.severe {
+    background-color: #ffebee;
+}
+
+.damage-item .boat-name {
+    font-weight: 600;
+    color: #dc3545;
+}
+
+.damage-item .damage-info {
+    font-size: 0.75rem;
+    color: #6c757d;
+}
+
+/* Reservierte Boote */
+.reservation-item {
+    padding: 10px;
+    border-bottom: 1px solid #dee2e6;
+    font-size: 0.875rem;
+}
+
+.reservation-item:last-child {
+    border-bottom: none;
+}
+
+.reservation-item .boat-name {
+    font-weight: 600;
+    color: #ffc107;
+}
+
+.reservation-item .reservation-info {
+    font-size: 0.75rem;
+    color: #6c757d;
+}
+
+/* Leer-Zustand */
+.empty-state {
+    padding: 20px;
+    text-align: center;
+    color: #6c757d;
+    font-size: 0.875rem;
+}
+
+.empty-state i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    display: block;
+    opacity: 0.5;
+}
+
+/* Modal-Anpassungen */
+.modal-header {
+    background-color: #0d6efd;
+    color: white;
+}
+
+.modal-header .btn-close {
+    filter: invert(1);
+}
+
+/* Form-Elemente */
+.form-label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.required::after {
+    content: " *";
+    color: #dc3545;
+}
+
+/* Crew-Input Container */
+.crew-input-group {
+    margin-bottom: 15px;
+}
+
+.crew-input-group label {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+/* Warnungen */
+.alert {
+    font-size: 0.875rem;
+}
+
+.alert i {
+    margin-right: 8px;
+}
+
+/* Statistik Tabelle */
+.statistics-table {
+    font-size: 0.875rem;
+}
+
+.statistics-table .rank-1 {
+    background-color: #ffd700;
+    font-weight: bold;
+}
+
+.statistics-table .rank-2 {
+    background-color: #c0c0c0;
+    font-weight: bold;
+}
+
+.statistics-table .rank-3 {
+    background-color: #cd7f32;
+    font-weight: bold;
+}
+
+.statistics-table .current-user {
+    background-color: #cfe2ff;
+    font-weight: bold;
+}
+
+/* Responsive Anpassungen */
+@media (max-width: 1200px) {
+    .action-buttons .btn {
+        padding: 15px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .boat-list-column,
+    .status-column,
+    .action-column {
+        height: auto;
+        min-height: 400px;
+    }
+
+    .scrollable-list {
+        max-height: 300px;
+    }
+}
+
+/* Ladeanzeige */
+.spinner-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+/* Select-Listbox in Modals (size-Attribut): Kiosk-Chromium Fullscreen verhindern */
+.modal select[size] {
+    height: auto;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+/* Custom Autocomplete Dropdown (ersetzt datalist für Kiosk-Chromium) */
+.kcs-autocomplete {
+    position: relative;
+}
+.kcs-autocomplete-dropdown {
+    position: absolute;
+    z-index: 1055;
+    left: 0;
+    right: 0;
+    max-height: 308px; /* ca. 7 Items sichtbar, Rest scrollbar */
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    background: #fff;
+    border: 2px solid #0d6efd;
+    border-top: none;
+    border-radius: 0 0 6px 6px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    display: none;
+}
+.kcs-autocomplete-dropdown.show {
+    display: block;
+}
+.kcs-autocomplete-item {
+    padding: 10px 12px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    border-bottom: 1px solid #f0f0f0;
+    -webkit-tap-highlight-color: rgba(0,0,0,0.1);
+}
+.kcs-autocomplete-item:last-child {
+    border-bottom: none;
+}
+.kcs-autocomplete-item:hover,
+.kcs-autocomplete-item.active {
+    background: #e7f1ff;
+}
+.kcs-autocomplete-item .text-muted {
+    font-size: 0.8rem;
+}
+
+/* Scrollbar Styling - Touchscreen-optimiert */
+::-webkit-scrollbar {
+    width: 16px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 8px;
+    border: 3px solid #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 130">
+  <defs>
+    <linearGradient id="ring" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5F5F5"/>
+      <stop offset="40%" stop-color="#BDBDBD"/>
+      <stop offset="70%" stop-color="#9E9E9E"/>
+      <stop offset="100%" stop-color="#616161"/>
+    </linearGradient>
+    <radialGradient id="bg" cx="40%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#FFA726"/>
+      <stop offset="100%" stop-color="#E65100"/>
+    </radialGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+  <circle cx="50" cy="52" r="48" fill="url(#ring)" filter="url(#shadow)"/>
+  <circle cx="50" cy="52" r="43" fill="url(#bg)"/>
+  <ellipse cx="38" cy="34" rx="14" ry="8" fill="rgba(255,255,255,0.18)" transform="rotate(-30,38,34)"/>
+  <!-- leaf icon -->
+  <path d="M50,30 C60,30 72,40 70,55 C68,68 55,72 50,72 C50,72 48,60 50,52 C50,44 46,36 50,30 Z" fill="rgba(255,255,255,0.85)"/>
+  <path d="M50,72 C44,65 38,55 36,48 C34,41 38,33 50,30 C46,36 44,48 50,52 C56,56 62,60 50,72" fill="rgba(255,255,255,0.5)"/>
+  <line x1="50" y1="34" x2="50" y2="70" stroke="rgba(255,150,50,0.8)" stroke-width="1.2"/>
+  <line x1="50" y1="42" x2="62" y2="50" stroke="rgba(255,150,50,0.8)" stroke-width="1"/>
+  <line x1="50" y1="50" x2="62" y2="57" stroke="rgba(255,150,50,0.8)" stroke-width="1"/>
+  <line x1="50" y1="58" x2="60" y2="63" stroke="rgba(255,150,50,0.8)" stroke-width="1"/>
+  <text x="50" y="112" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="bold" fill="#BDBDBD">HERBST-</text>
+  <text x="50" y="124" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="bold" fill="#BDBDBD">WANDERER</text>
+</svg>

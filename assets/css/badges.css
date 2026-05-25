@@ -1,0 +1,227 @@
+/* ============================================================
+   Fahrtenbuch – Badge Styles & Animationen
+   ============================================================ */
+
+/* ── Container & Grid ──────────────────────────────────────── */
+
+.badges-container {
+    padding: 4px 0;
+}
+
+.badge-category {
+    margin-bottom: 16px;
+}
+
+.badge-category-title {
+    font-size: 11px;
+    font-weight: 700;
+    color: #6c757d;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 8px;
+    padding-left: 2px;
+    border-bottom: 1px solid #e9ecef;
+    padding-bottom: 4px;
+}
+
+.badges-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 4px 0;
+}
+
+.badges-grid--compact {
+    gap: 8px;
+}
+
+/* ── Badge Item ─────────────────────────────────────────────── */
+
+.badge-item {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    cursor: default;
+    user-select: none;
+    transition: transform 0.2s ease;
+}
+
+.badge-item:hover {
+    transform: scale(1.06);
+    z-index: 10;
+}
+
+.badge-svg {
+    display: block;
+    overflow: visible;
+    width: auto;
+    height: 120px;
+}
+
+/* ── Gesperrt (noch nicht verdient) ────────────────────────── */
+
+.badge-locked .badge-svg {
+    filter: grayscale(100%) opacity(0.42) brightness(1.08);
+    transition: filter 0.3s ease;
+}
+
+.badge-locked:hover .badge-svg {
+    filter: grayscale(80%) opacity(0.55) brightness(1.1);
+}
+
+/* Schloss-Overlay */
+.badge-locked::after {
+    content: '🔒';
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 22px;
+    pointer-events: none;
+    filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.5));
+    opacity: 0.8;
+}
+
+/* ── Neu verdient – Shimmer ─────────────────────────────────── */
+
+@keyframes badge-shine {
+    0%   { filter: brightness(1) drop-shadow(0 0 0px transparent); }
+    30%  { filter: brightness(1.35) drop-shadow(0 0 14px gold); }
+    60%  { filter: brightness(1.15) drop-shadow(0 0 8px gold); }
+    100% { filter: brightness(1) drop-shadow(0 0 0px transparent); }
+}
+
+.badge-new .badge-svg {
+    animation: badge-shine 1.8s ease-in-out 3;
+}
+
+/* ── Unlock-Animation (beim ersten Erscheinen) ──────────────── */
+
+@keyframes badge-unlock {
+    0%   { transform: scale(0.4) rotate(-15deg); opacity: 0; }
+    55%  { transform: scale(1.18) rotate(4deg);  opacity: 1; }
+    75%  { transform: scale(0.94) rotate(-2deg); }
+    90%  { transform: scale(1.04) rotate(1deg);  }
+    100% { transform: scale(1)    rotate(0deg);  opacity: 1; }
+}
+
+.badge-animate-unlock {
+    animation: badge-unlock 0.75s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* ── Tooltip ────────────────────────────────────────────────── */
+
+.badge-tooltip {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    bottom: calc(100% + 8px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(30, 30, 30, 0.92);
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 7px;
+    font-size: 12px;
+    white-space: nowrap;
+    z-index: 200;
+    pointer-events: none;
+    text-align: center;
+    backdrop-filter: blur(4px);
+    transition: opacity 0.18s ease, visibility 0.18s ease;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+}
+
+.badge-tooltip small {
+    display: block;
+    opacity: 0.75;
+    font-size: 11px;
+    margin-top: 2px;
+}
+
+.badge-tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5px solid transparent;
+    border-top-color: rgba(30, 30, 30, 0.92);
+}
+
+.badge-item:hover .badge-tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* ── Diamant-Badge Ring-Animation (CSS) ─────────────────────── */
+
+@keyframes diamant-rotate {
+    from { filter: hue-rotate(0deg) brightness(1.0); }
+    50%  { filter: hue-rotate(60deg) brightness(1.12); }
+    to   { filter: hue-rotate(0deg) brightness(1.0); }
+}
+
+.badge-item[data-badge="1000km"] .badge-svg {
+    animation: diamant-rotate 5s linear infinite;
+}
+
+.badge-item[data-badge="1000km"].badge-locked .badge-svg {
+    animation: none;
+    filter: grayscale(100%) opacity(0.42);
+}
+
+/* ── Club-Fortschrittsbalken ────────────────────────────────── */
+
+.club-progress-card {
+    border: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.club-progress-card .card-header {
+    background: linear-gradient(135deg, #1565C0, #0D47A1);
+    color: white;
+    font-size: 13px;
+    padding: 8px 14px;
+}
+
+.club-progress-card .progress {
+    border-radius: 6px;
+}
+
+.club-progress-card .progress-bar {
+    transition: width 1.2s ease-in-out;
+    border-radius: 6px;
+}
+
+/* ── Post-Trip-Stats Badge-Highlight ────────────────────────── */
+
+.post-trip-badges {
+    background: linear-gradient(135deg, #f8f9fa, #e8f5e9);
+    border-radius: 12px;
+    padding: 16px;
+    margin-top: 12px;
+    border: 1px solid #c8e6c9;
+}
+
+.post-trip-badges h6 {
+    color: #2E7D32;
+    margin-bottom: 12px;
+}
+
+/* ── Responsiv (Mobile) ─────────────────────────────────────── */
+
+@media (max-width: 576px) {
+    .badges-grid {
+        gap: 8px;
+    }
+    .badge-item:hover {
+        transform: none;
+    }
+    .badge-tooltip {
+        display: none; /* Kein Hover auf Touch */
+    }
+}

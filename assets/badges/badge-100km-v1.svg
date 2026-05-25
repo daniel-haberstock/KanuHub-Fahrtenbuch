@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 130">
+  <defs>
+    <linearGradient id="ring" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5F5F5"/>
+      <stop offset="40%" stop-color="#BDBDBD"/>
+      <stop offset="70%" stop-color="#9E9E9E"/>
+      <stop offset="100%" stop-color="#616161"/>
+    </linearGradient>
+    <radialGradient id="bg" cx="40%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#1E88E5"/>
+      <stop offset="100%" stop-color="#0A2670"/>
+    </radialGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+  <circle cx="50" cy="52" r="48" fill="url(#ring)" filter="url(#shadow)"/>
+  <circle cx="50" cy="52" r="43" fill="url(#bg)"/>
+  <ellipse cx="38" cy="34" rx="14" ry="8" fill="rgba(255,255,255,0.18)" transform="rotate(-30,38,34)"/>
+  <g fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round">
+    <path d="M30,44 Q35,40 40,44 Q45,48 50,44 Q55,40 60,44 Q65,48 70,44"/>
+    <path d="M30,52 Q35,48 40,52 Q45,56 50,52 Q55,48 60,52 Q65,56 70,52"/>
+    <path d="M30,60 Q35,56 40,60 Q45,64 50,60 Q55,56 60,60 Q65,64 70,60"/>
+  </g>
+  <text x="50" y="112" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="bold" fill="#BDBDBD">HUNDERT</text>
+  <text x="50" y="124" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="bold" fill="#BDBDBD">KILOMETER</text>
+</svg>

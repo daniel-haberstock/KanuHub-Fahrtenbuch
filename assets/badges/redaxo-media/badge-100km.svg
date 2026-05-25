@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120">
+  <defs>
+    <linearGradient id="bgg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E88E5"/><stop offset="100%" stop-color="#0A2670"/>
+    </linearGradient>
+  </defs>
+  <rect x="5" y="5" width="90" height="90" rx="18" ry="18" fill="url(#bgg)" stroke="#BDBDBD" stroke-width="3"/>
+  <g fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round">
+    <path d="M20,38 Q27,33 34,38 Q41,43 48,38 Q55,33 62,38 Q69,43 76,38 Q80,35 82,38"/>
+    <path d="M20,48 Q27,43 34,48 Q41,53 48,48 Q55,43 62,48 Q69,53 76,48 Q80,45 82,48"/>
+    <path d="M20,58 Q27,53 34,58 Q41,63 48,58 Q55,53 62,58 Q69,63 76,58 Q80,55 82,58"/>
+  </g>
+  <text x="50" y="80" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="bold" fill="white">HUNDERT</text>
+  <text x="50" y="91" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="bold" fill="white">KILOMETER</text>
+  <rect x="25" y="104" width="50" height="12" rx="6" fill="#BDBDBD"/>
+  <text x="50" y="114" text-anchor="middle" font-family="Arial,sans-serif" font-size="7.5" font-weight="bold" fill="white">SILVER</text>
+</svg>

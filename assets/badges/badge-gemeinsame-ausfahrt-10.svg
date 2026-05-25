@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120">
+  <defs>
+    <linearGradient id="bgg_gemeinsame_ausfahrt_10" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00ACC1"/><stop offset="100%" stop-color="#004D40"/>
+    </linearGradient>
+  </defs>
+  <rect x="5" y="5" width="90" height="90" rx="18" ry="18" fill="url(#bgg_gemeinsame_ausfahrt_10)" stroke="#F9A825" stroke-width="3"/>
+  <!-- people icon -->
+  <circle cx="38" cy="38" r="7" fill="none" stroke="white" stroke-width="2"/>
+  <path d="M26,58 Q26,48 38,48 Q50,48 50,58" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="58" cy="38" r="7" fill="none" stroke="white" stroke-width="2" opacity="0.8"/>
+  <path d="M46,58 Q46,48 58,48 Q70,48 70,58" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+  <text x="50" y="80" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="bold" fill="white">TEAM-</text>
+  <text x="50" y="91" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="bold" fill="white">PLAYER</text>
+  <!-- tier pill -->
+  <rect x="25" y="104" width="50" height="12" rx="6" fill="#F9A825"/>
+  <text x="50" y="114" text-anchor="middle" font-family="Arial,sans-serif" font-size="7.5" font-weight="bold" fill="white">GOLD</text>
+</svg>

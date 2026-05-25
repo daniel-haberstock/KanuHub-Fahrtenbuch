@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120">
+  <defs>
+    <linearGradient id="bgg_gruppe_beigetreten_5" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#5C6BC0"/><stop offset="100%" stop-color="#1A237E"/>
+    </linearGradient>
+  </defs>
+  <rect x="5" y="5" width="90" height="90" rx="18" ry="18" fill="url(#bgg_gruppe_beigetreten_5)" stroke="#9E9E9E" stroke-width="3"/>
+  <!-- handshake icon -->
+  <path d="M22,50 L34,40 L42,48 L50,40 L58,48" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M78,50 L66,40 L58,48" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.8"/>
+  <circle cx="50" cy="35" r="3" fill="white" opacity="0.6"/>
+  <text x="50" y="80" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="bold" fill="white">5×</text>
+  <text x="50" y="91" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="bold" fill="white">BEIGETRETEN</text>
+  <!-- tier pill -->
+  <rect x="25" y="104" width="50" height="12" rx="6" fill="#9E9E9E"/>
+  <text x="50" y="114" text-anchor="middle" font-family="Arial,sans-serif" font-size="7.5" font-weight="bold" fill="white">SILBER</text>
+</svg>

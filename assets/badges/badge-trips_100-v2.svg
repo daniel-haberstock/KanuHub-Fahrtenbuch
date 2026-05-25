@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120">
+  <defs>
+    <radialGradient id="bgg" cx="40%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#E64A19"/><stop offset="100%" stop-color="#8B2500"/>
+    </radialGradient>
+    <clipPath id="sc"><path d="M10,15 Q10,8 17,8 L83,8 Q90,8 90,15 L90,75 Q90,95 50,112 Q10,95 10,75 Z"/></clipPath>
+  </defs>
+  <path d="M10,15 Q10,8 17,8 L83,8 Q90,8 90,15 L90,75 Q90,95 50,112 Q10,95 10,75 Z" fill="#F57F17" stroke="#F9A825" stroke-width="4"/>
+  <path d="M10,15 Q10,8 17,8 L83,8 Q90,8 90,15 L90,75 Q90,95 50,112 Q10,95 10,75 Z" fill="url(#bgg)"/>
+  <ellipse cx="38" cy="28" rx="16" ry="10" fill="rgba(255,255,255,0.15)" transform="rotate(-20,38,28)" clip-path="url(#sc)"/>
+  <g clip-path="url(#sc)">
+    <ellipse cx="50" cy="70" rx="22" ry="7" fill="none" stroke="white" stroke-width="2"/>
+    <line x1="50" y1="70" x2="50" y2="44" stroke="white" stroke-width="2"/>
+    <ellipse cx="43" cy="70" rx="4" ry="3" fill="white" opacity="0.6"/>
+    <ellipse cx="57" cy="70" rx="4" ry="3" fill="white" opacity="0.6"/>
+    <path d="M50,46 L67,62 L50,62 Z" fill="rgba(255,255,255,0.75)"/>
+  </g>
+  <text x="50" y="90" text-anchor="middle" font-family="Arial,sans-serif" font-size="8.5" font-weight="bold" fill="white">CENTURION</text>
+  <text x="50" y="101" text-anchor="middle" font-family="Arial,sans-serif" font-size="8.5" font-weight="bold" fill="white">100 FAHRTEN</text>
+</svg>

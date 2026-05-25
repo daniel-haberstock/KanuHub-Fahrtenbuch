@@ -1,0 +1,28 @@
+# ── API-Endpunkte vom htpasswd-Schutz ausnehmen ──────────────
+# Server-to-Server Aufrufe (REDAXO → Fahrtenbuch) nutzen
+# Bearer-Token statt Basic Auth. Die API-Dateien prüfen
+# den Token selbst (dashboard.php, login.php, badges/).
+
+# Apache 2.4+
+<IfModule mod_authz_core.c>
+    Require all granted
+</IfModule>
+
+# Apache 2.2 Fallback
+<IfModule !mod_authz_core.c>
+    Satisfy any
+    Order allow,deny
+    Allow from all
+</IfModule>
+
+# ── Authorization-Header an PHP weiterleiten ─────────────────
+# Strato Shared Hosting leitet den Authorization-Header nicht
+# automatisch an PHP weiter. Ohne diese Regel ist
+# $_SERVER['HTTP_AUTHORIZATION'] leer → Bearer-Token-Check schlägt fehl.
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{HTTP:Authorization} .+
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+</IfModule>
+
+AddType application/x-httpd-php80 .php

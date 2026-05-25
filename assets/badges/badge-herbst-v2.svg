@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120">
+  <defs>
+    <radialGradient id="bgg" cx="40%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#FFA726"/><stop offset="100%" stop-color="#E65100"/>
+    </radialGradient>
+    <clipPath id="sc"><path d="M10,15 Q10,8 17,8 L83,8 Q90,8 90,15 L90,75 Q90,95 50,112 Q10,95 10,75 Z"/></clipPath>
+  </defs>
+  <path d="M10,15 Q10,8 17,8 L83,8 Q90,8 90,15 L90,75 Q90,95 50,112 Q10,95 10,75 Z" fill="#9E9E9E" stroke="#BDBDBD" stroke-width="4"/>
+  <path d="M10,15 Q10,8 17,8 L83,8 Q90,8 90,15 L90,75 Q90,95 50,112 Q10,95 10,75 Z" fill="url(#bgg)"/>
+  <ellipse cx="38" cy="28" rx="16" ry="10" fill="rgba(255,255,255,0.15)" transform="rotate(-20,38,28)" clip-path="url(#sc)"/>
+  <g clip-path="url(#sc)">
+    <path d="M50,38 C62,38 76,50 74,66 C72,80 58,84 50,84 C50,84 47,70 50,61 C53,52 46,44 50,38 Z" fill="rgba(255,255,255,0.85)"/>
+    <line x1="50" y1="42" x2="50" y2="82" stroke="rgba(200,150,100,0.8)" stroke-width="1.5"/>
+    <line x1="50" y1="52" x2="64" y2="60" stroke="rgba(200,150,100,0.8)" stroke-width="1.2"/>
+    <line x1="50" y1="62" x2="64" y2="69" stroke="rgba(200,150,100,0.8)" stroke-width="1.2"/>
+  </g>
+  <text x="50" y="90" text-anchor="middle" font-family="Arial,sans-serif" font-size="8.5" font-weight="bold" fill="white">HERBST-</text>
+  <text x="50" y="101" text-anchor="middle" font-family="Arial,sans-serif" font-size="8.5" font-weight="bold" fill="white">WANDERER</text>
+</svg>

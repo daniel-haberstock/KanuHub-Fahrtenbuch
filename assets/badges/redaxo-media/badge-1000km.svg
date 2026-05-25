@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120">
+  <defs>
+    <linearGradient id="bgg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#CE93D8"/><stop offset="100%" stop-color="#4A148C"/>
+    </linearGradient>
+  </defs>
+  <rect x="5" y="5" width="90" height="90" rx="18" ry="18" fill="url(#bgg)" stroke="#80D8FF" stroke-width="3"/>
+  <!-- diamond icon -->
+  <polygon points="50,22 68,45 50,68 32,45" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+  <line x1="32" y1="45" x2="68" y2="45" stroke="white" stroke-width="1.5"/>
+  <line x1="50" y1="22" x2="41" y2="45" stroke="white" stroke-width="1"/>
+  <line x1="50" y1="22" x2="59" y2="45" stroke="white" stroke-width="1"/>
+  <line x1="41" y1="45" x2="50" y2="68" stroke="white" stroke-width="1"/>
+  <line x1="59" y1="45" x2="50" y2="68" stroke="white" stroke-width="1"/>
+  <text x="50" y="80" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="bold" fill="white">DIAMANT-</text>
+  <text x="50" y="91" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="bold" fill="white">PADDLER</text>
+  <rect x="22" y="104" width="56" height="12" rx="6" fill="#80D8FF"/>
+  <text x="50" y="114" text-anchor="middle" font-family="Arial,sans-serif" font-size="7.5" font-weight="bold" fill="white">DIAMOND</text>
+</svg>

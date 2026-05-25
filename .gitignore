@@ -1,0 +1,31 @@
+# ── lokale Konfiguration ─────────────────────────────────
+config/config.php
+config/layout.php
+
+# ── Logs & Cache ─────────────────────────────────────────
+logs/
+*.log
+
+# ── Optionale Hardware-/Plugin-Sachen (lokal, NICHT online) ─
+Optional_nicht_auf_webserver_speichern/
+
+# ── Admin .htpasswd (nie ins Repo) ───────────────────────
+admin/.htpasswd
+
+# ── PHP-Mailer Cache, OS-Mist ────────────────────────────
+.DS_Store
+Thumbs.db
+nbproject/
+.idea/
+.vscode/
+*.swp
+
+# ── Composer (falls später) ──────────────────────────────
+/vendor/
+
+# ── Backups & temporäre SQL-Dumps ────────────────────────
+*.sql.bak
+backup/
+
+# ── Generierte Daten (Demo-Profilbilder etc.) ────────────
+data/

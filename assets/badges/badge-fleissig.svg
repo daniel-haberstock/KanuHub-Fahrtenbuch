@@ -1,0 +1,52 @@
+<svg width="100" height="130" viewBox="0 0 100 130" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg" cx="38%" cy="32%" r="70%">
+      <stop offset="0%" stop-color="#FFA726"/>
+      <stop offset="100%" stop-color="#BF360C"/>
+    </radialGradient>
+    <linearGradient id="ring" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%"   stop-color="#BDBDBD"/>
+      <stop offset="30%"  stop-color="#F5F5F5"/>
+      <stop offset="65%"  stop-color="#9E9E9E"/>
+      <stop offset="100%" stop-color="#616161"/>
+    </linearGradient>
+    <filter id="sh" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3.5" flood-color="#BF360C" flood-opacity="0.4"/>
+    </filter>
+    <clipPath id="clip">
+      <circle cx="50" cy="50" r="43"/>
+    </clipPath>
+  </defs>
+
+  <!-- Silber-Ring -->
+  <circle cx="50" cy="50" r="48" fill="url(#ring)" filter="url(#sh)"/>
+
+  <!-- Hintergrund -->
+  <circle cx="50" cy="50" r="43" fill="url(#bg)"/>
+  <circle cx="50" cy="50" r="43" fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="1.5"/>
+
+  <!-- Glanz -->
+  <ellipse cx="33" cy="29" rx="16" ry="9" fill="rgba(255,255,255,0.18)" transform="rotate(-35,33,29)" clip-path="url(#clip)"/>
+
+  <!-- Kajak-Icon (Vogelperspektive) -->
+  <g clip-path="url(#clip)">
+    <!-- Rumpf -->
+    <ellipse cx="50" cy="50" rx="27" ry="10" fill="none"
+             stroke="rgba(255,255,255,0.95)" stroke-width="2.8"/>
+    <!-- Mittelstrich -->
+    <line x1="23" y1="50" x2="77" y2="50" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+    <!-- Paddel-Schaft (vertikal) -->
+    <line x1="50" y1="27" x2="50" y2="73" stroke="rgba(255,255,255,0.9)" stroke-width="2.2"/>
+    <!-- Paddel-Blätter -->
+    <ellipse cx="50" cy="23" rx="7" ry="4.5" fill="rgba(255,255,255,0.92)"/>
+    <ellipse cx="50" cy="77" rx="7" ry="4.5" fill="rgba(255,255,255,0.92)"/>
+  </g>
+
+  <!-- Badge-Name -->
+  <text x="50" y="112" text-anchor="middle"
+        font-family="'Segoe UI',Helvetica,Arial,sans-serif"
+        font-size="9" font-weight="700" fill="#E65100" letter-spacing="1">FLEISSIGER</text>
+  <text x="50" y="124" text-anchor="middle"
+        font-family="'Segoe UI',Helvetica,Arial,sans-serif"
+        font-size="9" font-weight="700" fill="#E65100" letter-spacing="1">PADDLER</text>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120">
+  <defs>
+    <linearGradient id="bgg_geplante_ausfahrt_10" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FF9800"/><stop offset="100%" stop-color="#BF360C"/>
+    </linearGradient>
+  </defs>
+  <rect x="5" y="5" width="90" height="90" rx="18" ry="18" fill="url(#bgg_geplante_ausfahrt_10)" stroke="#F9A825" stroke-width="3"/>
+  <!-- calendar icon -->
+  <rect x="28" y="32" width="44" height="36" rx="4" fill="none" stroke="white" stroke-width="2.2"/>
+  <line x1="28" y1="44" x2="72" y2="44" stroke="white" stroke-width="2"/>
+  <line x1="38" y1="28" x2="38" y2="36" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="62" y1="28" x2="62" y2="36" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="42" cy="53" r="2.5" fill="white" opacity="0.8"/>
+  <circle cx="56" cy="53" r="2.5" fill="white" opacity="0.8"/>
+  <circle cx="42" cy="63" r="2.5" fill="white" opacity="0.5"/>
+  <text x="50" y="80" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="bold" fill="white">TERMIN-</text>
+  <text x="50" y="91" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="bold" fill="white">TREUER</text>
+  <!-- tier pill -->
+  <rect x="25" y="104" width="50" height="12" rx="6" fill="#F9A825"/>
+  <text x="50" y="114" text-anchor="middle" font-family="Arial,sans-serif" font-size="7.5" font-weight="bold" fill="white">GOLD</text>
+</svg>

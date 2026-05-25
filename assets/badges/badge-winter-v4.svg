@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120">
+  <defs>
+    <linearGradient id="bgg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4FC3F7"/><stop offset="100%" stop-color="#01579B"/>
+    </linearGradient>
+  </defs>
+  <rect x="5" y="5" width="90" height="90" rx="18" ry="18" fill="url(#bgg)" stroke="#F9A825" stroke-width="3"/>
+  <!-- snowflake icon -->
+  <line x1="50" y1="22" x2="50" y2="68" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="27" y1="45" x2="73" y2="45" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="33" y1="28" x2="67" y2="62" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="67" y1="28" x2="33" y2="62" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="44" y1="26" x2="50" y2="22" stroke="white" stroke-width="1.5"/>
+  <line x1="56" y1="26" x2="50" y2="22" stroke="white" stroke-width="1.5"/>
+  <line x1="44" y1="64" x2="50" y2="68" stroke="white" stroke-width="1.5"/>
+  <line x1="56" y1="64" x2="50" y2="68" stroke="white" stroke-width="1.5"/>
+  <circle cx="50" cy="45" r="3" fill="white"/>
+  <text x="50" y="80" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="bold" fill="white">WINTER-</text>
+  <text x="50" y="91" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="bold" fill="white">PADDLER</text>
+  <rect x="25" y="104" width="50" height="12" rx="6" fill="#F9A825"/>
+  <text x="50" y="114" text-anchor="middle" font-family="Arial,sans-serif" font-size="7.5" font-weight="bold" fill="white">GOLD</text>
+</svg>

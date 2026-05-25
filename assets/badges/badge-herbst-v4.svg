@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120">
+  <defs>
+    <linearGradient id="bgg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFA726"/><stop offset="100%" stop-color="#E65100"/>
+    </linearGradient>
+  </defs>
+  <rect x="5" y="5" width="90" height="90" rx="18" ry="18" fill="url(#bgg)" stroke="#BDBDBD" stroke-width="3"/>
+  <!-- leaf icon -->
+  <path d="M50,22 C63,22 76,34 74,50 C72,63 58,67 50,67 C50,67 47,55 50,47 C53,39 46,29 50,22 Z" fill="rgba(255,255,255,0.85)"/>
+  <line x1="50" y1="26" x2="50" y2="65" stroke="rgba(200,150,100,0.8)" stroke-width="1.5"/>
+  <line x1="50" y1="36" x2="63" y2="44" stroke="rgba(200,150,100,0.8)" stroke-width="1.2"/>
+  <line x1="50" y1="46" x2="63" y2="53" stroke="rgba(200,150,100,0.8)" stroke-width="1.2"/>
+  <line x1="50" y1="54" x2="61" y2="59" stroke="rgba(200,150,100,0.8)" stroke-width="1.2"/>
+  <text x="50" y="80" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="bold" fill="white">HERBST-</text>
+  <text x="50" y="91" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="bold" fill="white">WANDERER</text>
+  <rect x="25" y="104" width="50" height="12" rx="6" fill="#BDBDBD"/>
+  <text x="50" y="114" text-anchor="middle" font-family="Arial,sans-serif" font-size="7.5" font-weight="bold" fill="white">SILVER</text>
+</svg>

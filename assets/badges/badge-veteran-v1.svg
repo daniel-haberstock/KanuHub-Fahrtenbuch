@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 130">
+  <defs>
+    <linearGradient id="ring" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="30%" stop-color="#CFD8DC"/>
+      <stop offset="60%" stop-color="#B0BEC5"/>
+      <stop offset="100%" stop-color="#78909C"/>
+    </linearGradient>
+    <radialGradient id="bg" cx="40%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#CE93D8"/>
+      <stop offset="100%" stop-color="#4A148C"/>
+    </radialGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+  <circle cx="50" cy="52" r="48" fill="url(#ring)" filter="url(#shadow)"/>
+  <circle cx="50" cy="52" r="43" fill="url(#bg)"/>
+  <ellipse cx="38" cy="34" rx="14" ry="8" fill="rgba(255,255,255,0.25)" transform="rotate(-30,38,34)"/>
+  <!-- trophy icon -->
+  <path d="M37,32 L63,32 L63,55 Q63,68 50,70 Q37,68 37,55 Z" fill="rgba(255,255,255,0.85)"/>
+  <path d="M37,38 Q28,38 28,48 Q28,55 37,55" fill="none" stroke="rgba(255,255,255,0.85)" stroke-width="3"/>
+  <path d="M63,38 Q72,38 72,48 Q72,55 63,55" fill="none" stroke="rgba(255,255,255,0.85)" stroke-width="3"/>
+  <rect x="45" y="70" width="10" height="6" fill="rgba(255,255,255,0.85)"/>
+  <rect x="40" y="76" width="20" height="3" rx="1" fill="rgba(255,255,255,0.85)"/>
+  <text x="50" y="56" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="bold" fill="#CE93D8">★</text>
+  <text x="50" y="112" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="bold" fill="#CFD8DC">CLUB-</text>
+  <text x="50" y="124" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="bold" fill="#CFD8DC">VETERAN</text>
+</svg>

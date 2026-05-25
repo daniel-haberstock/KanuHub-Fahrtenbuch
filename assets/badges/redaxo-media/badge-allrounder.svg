@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120">
+  <defs>
+    <linearGradient id="bgg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#AB47BC"/><stop offset="100%" stop-color="#4A148C"/>
+    </linearGradient>
+  </defs>
+  <rect x="5" y="5" width="90" height="90" rx="18" ry="18" fill="url(#bgg)" stroke="#F9A825" stroke-width="3"/>
+  <!-- star icon -->
+  <polygon points="50,20 55.5,36.5 73,36.5 59,46.5 64.4,63 50,53 35.6,63 41,46.5 27,36.5 44.5,36.5" fill="rgba(255,255,255,0.9)"/>
+  <text x="50" y="80" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="bold" fill="white">ALL-</text>
+  <text x="50" y="91" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="bold" fill="white">ROUNDER</text>
+  <rect x="25" y="104" width="50" height="12" rx="6" fill="#F9A825"/>
+  <text x="50" y="114" text-anchor="middle" font-family="Arial,sans-serif" font-size="7.5" font-weight="bold" fill="white">GOLD</text>
+</svg>

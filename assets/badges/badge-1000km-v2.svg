@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120">
+  <defs>
+    <radialGradient id="bgg" cx="40%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#CE93D8"/><stop offset="100%" stop-color="#4A148C"/>
+    </radialGradient>
+    <clipPath id="sc"><path d="M10,15 Q10,8 17,8 L83,8 Q90,8 90,15 L90,75 Q90,95 50,112 Q10,95 10,75 Z"/></clipPath>
+  </defs>
+  <path d="M10,15 Q10,8 17,8 L83,8 Q90,8 90,15 L90,75 Q90,95 50,112 Q10,95 10,75 Z" fill="#80D8FF" stroke="#E1F5FE" stroke-width="4"/>
+  <path d="M10,15 Q10,8 17,8 L83,8 Q90,8 90,15 L90,75 Q90,95 50,112 Q10,95 10,75 Z" fill="url(#bgg)"/>
+  <ellipse cx="38" cy="28" rx="16" ry="10" fill="rgba(255,255,255,0.2)" transform="rotate(-20,38,28)" clip-path="url(#sc)"/>
+  <g clip-path="url(#sc)">
+    <polygon points="50,36 70,58 50,82 30,58" fill="none" stroke="white" stroke-width="2.2" stroke-linejoin="round"/>
+    <line x1="30" y1="58" x2="70" y2="58" stroke="white" stroke-width="1.5"/>
+    <line x1="50" y1="36" x2="40" y2="58" stroke="white" stroke-width="1"/>
+    <line x1="50" y1="36" x2="60" y2="58" stroke="white" stroke-width="1"/>
+    <line x1="40" y1="58" x2="50" y2="82" stroke="white" stroke-width="1"/>
+    <line x1="60" y1="58" x2="50" y2="82" stroke="white" stroke-width="1"/>
+  </g>
+  <text x="50" y="90" text-anchor="middle" font-family="Arial,sans-serif" font-size="8.5" font-weight="bold" fill="white">DIAMANT-</text>
+  <text x="50" y="101" text-anchor="middle" font-family="Arial,sans-serif" font-size="8.5" font-weight="bold" fill="white">PADDLER</text>
+</svg>

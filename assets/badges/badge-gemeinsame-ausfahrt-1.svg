@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120">
+  <defs>
+    <linearGradient id="bgg_gemeinsame_ausfahrt_1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#26C6DA"/><stop offset="100%" stop-color="#00695C"/>
+    </linearGradient>
+  </defs>
+  <rect x="5" y="5" width="90" height="90" rx="18" ry="18" fill="url(#bgg_gemeinsame_ausfahrt_1)" stroke="#E8AC5A" stroke-width="3"/>
+  <!-- people icon -->
+  <circle cx="38" cy="38" r="7" fill="none" stroke="white" stroke-width="2"/>
+  <path d="M26,58 Q26,48 38,48 Q50,48 50,58" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="58" cy="38" r="7" fill="none" stroke="white" stroke-width="2" opacity="0.8"/>
+  <path d="M46,58 Q46,48 58,48 Q70,48 70,58" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+  <text x="50" y="80" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="bold" fill="white">ERSTE</text>
+  <text x="50" y="91" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="bold" fill="white">GEMEINSAME</text>
+  <!-- tier pill -->
+  <rect x="25" y="104" width="50" height="12" rx="6" fill="#E8AC5A"/>
+  <text x="50" y="114" text-anchor="middle" font-family="Arial,sans-serif" font-size="7.5" font-weight="bold" fill="white">BRONZE</text>
+</svg>

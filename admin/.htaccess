@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Fahrtenbuch Administration"
+AuthUserFile /mnt/web114/e1/80/5535580/htdocs/fahrtenbuch_1/admin/.htpasswd
+Require valid-user

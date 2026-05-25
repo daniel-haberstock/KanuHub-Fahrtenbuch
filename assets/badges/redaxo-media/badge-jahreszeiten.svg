@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120">
+  <defs>
+    <linearGradient id="bgg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#66BB6A"/><stop offset="100%" stop-color="#1B5E20"/>
+    </linearGradient>
+    <clipPath id="rc"><rect x="5" y="5" width="90" height="90" rx="18" ry="18"/></clipPath>
+  </defs>
+  <rect x="5" y="5" width="90" height="90" rx="18" ry="18" fill="url(#bgg)" stroke="#F9A825" stroke-width="3"/>
+  <!-- seasons 4-quadrant icon -->
+  <g clip-path="url(#rc)">
+    <line x1="50" y1="5" x2="50" y2="95" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
+    <line x1="5" y1="50" x2="95" y2="50" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
+    <!-- spring TL: flower petal -->
+    <ellipse cx="29" cy="30" rx="5" ry="10" fill="rgba(255,255,255,0.7)" transform="rotate(-30,29,30)"/>
+    <!-- summer TR: sun -->
+    <circle cx="70" cy="28" r="7" fill="rgba(255,220,50,0.85)"/>
+    <line x1="70" y1="17" x2="70" y2="13" stroke="rgba(255,220,50,0.9)" stroke-width="1.8"/>
+    <line x1="78" y1="20" x2="81" y2="17" stroke="rgba(255,220,50,0.9)" stroke-width="1.8"/>
+    <!-- autumn BR: leaf -->
+    <path d="M64,52 C72,52 80,60 78,68 C76,74 70,76 66,76 Z" fill="rgba(255,150,50,0.85)"/>
+    <!-- winter BL: snowflake -->
+    <line x1="28" y1="54" x2="28" y2="76" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
+    <line x1="17" y1="65" x2="39" y2="65" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
+    <line x1="20" y1="57" x2="36" y2="73" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="36" y1="57" x2="20" y2="73" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+  <text x="50" y="80" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="bold" fill="white">VIER</text>
+  <text x="50" y="91" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="bold" fill="white">JAHRESZEITEN</text>
+  <rect x="25" y="104" width="50" height="12" rx="6" fill="#F9A825"/>
+  <text x="50" y="114" text-anchor="middle" font-family="Arial,sans-serif" font-size="7.5" font-weight="bold" fill="white">GOLD</text>
+</svg>

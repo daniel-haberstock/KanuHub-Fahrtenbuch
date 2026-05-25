@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120">
+  <defs>
+    <radialGradient id="bgg" cx="40%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#A5D6A7"/><stop offset="100%" stop-color="#1B5E20"/>
+    </radialGradient>
+    <clipPath id="sc"><path d="M10,15 Q10,8 17,8 L83,8 Q90,8 90,15 L90,75 Q90,95 50,112 Q10,95 10,75 Z"/></clipPath>
+  </defs>
+  <path d="M10,15 Q10,8 17,8 L83,8 Q90,8 90,15 L90,75 Q90,95 50,112 Q10,95 10,75 Z" fill="#CD7F32" stroke="#E8AC5A" stroke-width="4"/>
+  <path d="M10,15 Q10,8 17,8 L83,8 Q90,8 90,15 L90,75 Q90,95 50,112 Q10,95 10,75 Z" fill="url(#bgg)"/>
+  <ellipse cx="38" cy="28" rx="16" ry="10" fill="rgba(255,255,255,0.15)" transform="rotate(-20,38,28)" clip-path="url(#sc)"/>
+  <g clip-path="url(#sc)">
+    <ellipse cx="50" cy="40" rx="5" ry="11" fill="rgba(255,255,255,0.8)"/>
+    <ellipse cx="50" cy="40" rx="5" ry="11" fill="rgba(255,255,255,0.8)" transform="rotate(45,50,58)"/>
+    <ellipse cx="50" cy="40" rx="5" ry="11" fill="rgba(255,255,255,0.8)" transform="rotate(90,50,58)"/>
+    <ellipse cx="50" cy="40" rx="5" ry="11" fill="rgba(255,255,255,0.8)" transform="rotate(135,50,58)"/>
+    <ellipse cx="50" cy="40" rx="5" ry="11" fill="rgba(255,255,255,0.8)" transform="rotate(180,50,58)"/>
+    <ellipse cx="50" cy="40" rx="5" ry="11" fill="rgba(255,255,255,0.8)" transform="rotate(225,50,58)"/>
+    <ellipse cx="50" cy="40" rx="5" ry="11" fill="rgba(255,255,255,0.8)" transform="rotate(270,50,58)"/>
+    <ellipse cx="50" cy="40" rx="5" ry="11" fill="rgba(255,255,255,0.8)" transform="rotate(315,50,58)"/>
+    <circle cx="50" cy="58" r="9" fill="#FFD54F"/>
+  </g>
+  <text x="50" y="90" text-anchor="middle" font-family="Arial,sans-serif" font-size="8.5" font-weight="bold" fill="white">FRUEHLINGS-</text>
+  <text x="50" y="101" text-anchor="middle" font-family="Arial,sans-serif" font-size="8.5" font-weight="bold" fill="white">PADDLER</text>
+</svg>

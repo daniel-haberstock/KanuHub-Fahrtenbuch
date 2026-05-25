@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120">
+  <defs>
+    <linearGradient id="bgg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E64A19"/><stop offset="100%" stop-color="#8B2500"/>
+    </linearGradient>
+  </defs>
+  <rect x="5" y="5" width="90" height="90" rx="18" ry="18" fill="url(#bgg)" stroke="#F9A825" stroke-width="3"/>
+  <ellipse cx="50" cy="62" rx="20" ry="6" fill="none" stroke="white" stroke-width="2"/>
+  <line x1="50" y1="62" x2="50" y2="36" stroke="white" stroke-width="2"/>
+  <ellipse cx="44" cy="62" rx="4" ry="3" fill="white" opacity="0.6"/>
+  <ellipse cx="56" cy="62" rx="4" ry="3" fill="white" opacity="0.6"/>
+  <path d="M50,38 L65,52 L50,52 Z" fill="rgba(255,255,255,0.75)"/>
+  <text x="50" y="80" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="bold" fill="white">CENTURION</text>
+  <text x="50" y="91" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="bold" fill="white">100 FAHRTEN</text>
+  <rect x="25" y="104" width="50" height="12" rx="6" fill="#F9A825"/>
+  <text x="50" y="114" text-anchor="middle" font-family="Arial,sans-serif" font-size="7.5" font-weight="bold" fill="white">GOLD</text>
+</svg>

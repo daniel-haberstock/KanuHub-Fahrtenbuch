@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 130">
+  <defs>
+    <radialGradient id="bgg" cx="40%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#1E88E5"/><stop offset="100%" stop-color="#0A2670"/>
+    </radialGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#000" flood-opacity="0.35"/></filter>
+    <clipPath id="cc"><circle cx="50" cy="50" r="38"/></clipPath>
+  </defs>
+  <polygon points="50,2 60.9,9.4 74,8.4 79.7,20.3 91.6,26 90.6,39.1 98,50 90.6,60.9 91.6,74 79.7,79.7 74,91.6 60.9,90.6 50,98 39.1,90.6 26,91.6 20.3,79.7 8.4,74 9.4,60.9 2,50 9.4,39.1 8.4,26 20.3,20.3 26,8.4 39.1,9.4" fill="#BDBDBD" filter="url(#sh)"/>
+  <circle cx="50" cy="50" r="38" fill="url(#bgg)"/>
+  <g clip-path="url(#cc)" fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round">
+    <path d="M20,42 Q27,37 34,42 Q41,47 48,42 Q55,37 62,42 Q69,47 76,42 Q80,39 82,42"/>
+    <path d="M20,50 Q27,45 34,50 Q41,55 48,50 Q55,45 62,50 Q69,55 76,50 Q80,47 82,50"/>
+    <path d="M20,58 Q27,53 34,58 Q41,63 48,58 Q55,53 62,58 Q69,63 76,58 Q80,55 82,58"/>
+  </g>
+  <text x="50" y="112" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="bold" fill="#BDBDBD">HUNDERT</text>
+  <text x="50" y="124" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="bold" fill="#BDBDBD">KILOMETER</text>
+</svg>

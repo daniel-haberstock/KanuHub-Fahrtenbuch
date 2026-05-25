@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120">
+  <defs>
+    <linearGradient id="bgg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#66BB6A"/><stop offset="100%" stop-color="#2E7D32"/>
+    </linearGradient>
+  </defs>
+  <rect x="5" y="5" width="90" height="90" rx="18" ry="18" fill="url(#bgg)" stroke="#F9A825" stroke-width="3"/>
+  <!-- trophy icon -->
+  <path d="M32,18 L68,18 L68,44 Q68,58 50,60 Q32,58 32,44 Z" fill="rgba(255,255,255,0.85)"/>
+  <path d="M32,24 Q22,24 22,35 Q22,43 32,43" fill="none" stroke="rgba(255,255,255,0.85)" stroke-width="3"/>
+  <path d="M68,24 Q78,24 78,35 Q78,43 68,43" fill="none" stroke="rgba(255,255,255,0.85)" stroke-width="3"/>
+  <rect x="44" y="60" width="12" height="7" fill="rgba(255,255,255,0.85)"/>
+  <rect x="38" y="67" width="24" height="4" rx="1.5" fill="rgba(255,255,255,0.85)"/>
+  <text x="50" y="48" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="rgba(255,200,50,0.9)">&#9733;</text>
+  <text x="50" y="80" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="bold" fill="white">STAMM-</text>
+  <text x="50" y="91" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="bold" fill="white">GAST</text>
+  <rect x="25" y="104" width="50" height="12" rx="6" fill="#F9A825"/>
+  <text x="50" y="114" text-anchor="middle" font-family="Arial,sans-serif" font-size="7.5" font-weight="bold" fill="white">GOLD</text>
+</svg>
